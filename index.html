@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Peter Munch - Personal Webpage</title>
 
   <!--
     - favicon
@@ -23,6 +23,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    ul {
+      margin: 10px;
+    }
+    ul.dash {
+      list-style-type: none;
+    }
+    ul.dash > li {
+      text-indent: 10px;
+    }
+    ul.dash > li:before {
+      content: "-";
+      text-indent: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,13 +58,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/pic.jpg" alt="Peter Munch" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Peter Munch">Peter Munch</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Postdoctoral researcher</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -68,55 +84,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Uppsala, Sweden</address>
             </div>
 
           </li>
@@ -128,20 +102,26 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="mailto:peter.munch@it.uu.se" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://github.com/peterrum" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://scholar.google.com/citations?user=ILHWH8kAAAAJ&hl=en&oi=ao" class="social-link">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.katalog.uu.se/profile/?id=N23-2561" class="social-link">
+              <ion-icon name="globe-outline"></ion-icon>
             </a>
           </li>
 
@@ -178,15 +158,15 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Publications</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Talks</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Students</button>
           </li>
 
         </ul>
@@ -209,201 +189,101 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am a postdoctoral researcher at the
+            <a href="https://www.katalog.uu.se/organisation/?orgId=X61:5">Division of Scientific Computing</a>
+            and the
+            <a href="https://www.katalog.uu.se/organisation/?orgId=X61:5">Uppsala Architecture Research Team</a>
+            at
+            the <a href="https://www.it.uu.se/first?lang=en">Department of Information Technology</a>
+            at <a href="https://www.uu.se/">Uppsala University</a>, Sweden.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+          <img src="./assets/images/view.jpg" 
+          style="object-fit:fill;
+          max-width: 100%;
+  height: auto;
+          border: solid 1px #CCC" />
+         </p>
+
+          <p>
+            I am developing algorithms and software for scientific
+            computing in the following research fields:
+
+            <section class="timeline">
+    
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    high-performance computing: matrix-free computations, dynamic sparse communication patterns, node-level optimization
+                  </p>
+                </li>
+    
+              </ol>
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    iterative solvers: multigrid, block preconditioners
+                  </p>
+                </li>
+    
+              </ol>
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    efficient algorithms for high-dimensional partial differential equations (e.g., 6D Vlasov-Poisson)
+                  </p>
+                </li>
+    
+              </ol>
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    discontinuous Galerkin methods
+                  </p>
+                </li>
+    
+              </ol>
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    computational fluid dynamics
+                  </p>
+                </li>
+    
+              </ol>
+              <ol class="timeline-list">
+    
+                <li class="timeline-item">
+                  <p class="timeline-text">
+                    simulation of additive manufacturing processes including solid-state sintering and melt-pool modeling
+                  </p>
+                </li>
+    
+              </ol>
+    
+            </section>
           </p>
-        </section>
 
+          <p>
+            Furthermore, I am one of the principal developers of the general-purpose finite-element library
+            <a href="https://www.dealii.org/">deal.II</a>. I have participated in writing the following tutorials of deal.II:
+            <a href="https://www.dealii.org/current/doxygen/deal.II/step_19.html"> step-19</a>, 
+            <a href="https://www.dealii.org/current/doxygen/deal.II/step_68.html"> step-68</a> (both demonstrating the particle infrastructure),
+            <a href="https://www.dealii.org/current/doxygen/deal.II/step_75.html"> step-75</a> (matrix-free multigrid for hp-FEM),
+            <a href="https://www.dealii.org/current/doxygen/deal.II/step_76.html"> step-76</a> (matrix-free Euler solver exploiting MPI-3.0 shared-memory features),
+            <a href="https://www.dealii.org/current/doxygen/deal.II/step_87.html"> step-87</a> (evaluation of finite-element solutions at arbitrary points within a distributed mesh with
+            application to two-phase flow). 
+          </p>
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+          <p>
+            For more details on my current projects, see my GitHub page: <a href="https://github.com/peterrum"> https://github.com/peterrum</a>.
+          </p>
         </section>
 
 
@@ -421,86 +301,9 @@
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -522,51 +325,223 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="glasses-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Short Biography</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Uppsala University, Sweden</h4>
 
-              <span>2007 — 2008</span>
+              <span>2024 — </span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Postdoctoral researcher at the Division of Scientific Computing and the Uppsala Architecture Research Team at the Department of Information Technology.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">University of Augsburg, Germany</h4>
 
-              <span>2006 — 2007</span>
+              <span>2023</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Doctoral degree (Dr. rer. nat.) at the 
+                Faculty of Mathematics, Natural Sciences, and Materials Engineering.
+              </p>
+
+              <p class="timeline-text">
+                Dissertation: Matrix-free finite-element computations at extreme scale and for challenging applications.
+              </p>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Research associate and PhD student at the chair for High-Performance Scientific Computing at the 
+                Faculty of Mathematics, Natural Sciences, and Materials Engineering;
+                supervisor: Prof. Martin Kronbichler.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">Uppsala University, Sweden</h4>
 
-              <span>2002 — 2004</span>
+              <span>2021 — 2022</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Visiting researcher at the Division of Scientific Computing, Department of Information Technology.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Helmholtz-Zentrum Hereon, Germany</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Research associate at the Institute of Material Systems Modeling in Geesthacht.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical University of Munich, Germany</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Research associate and PhD student at the Institute for Computational Mechanics at
+                the TUM School of Engineering and Design;
+                supervisor: Prof. Wolfgang A. Wall; mentor: Dr. Martin Kronbichler.
+              </p>
+
+              <span>2018</span>
+
+              <p class="timeline-text">
+                Master of Science (M.Sc.) in Computational Science and Engineering. 
+              </p>
+
+              <p class="timeline-text">
+                Master's thesis:
+                <a href="https://mediatum.ub.tum.de/node?id=1514962"> An efﬁcient hybrid multigrid solver for high-order discontinuous Galerkin methods</a>.
+              </p>
+
+              <span>2016</span>
+
+              <p class="timeline-text">
+                Master of Science (M.Sc.) in Mechanical Engineering. 
+              </p>
+
+              <p class="timeline-text">
+                Master's thesis: MPI parallelisation of a multiphase solver and its application on cavitation bubble dynamics.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Teaching</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Of Augsburg, Germany</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Teaching assistant for the course "Numerical Linear Algebra" ("Numerische lineare Algebra").
+              </p>
+
+              <span>2022/2023</span>
+
+              <p class="timeline-text">
+                Teaching assistant for the course "Introduction into Data Science and Date Engineering" ("Einf&uuml;hrung in Data Science und Date Enginnering").
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical University Of Munich, Germany</h4>
+
+              <span>2018/2019</span>
+
+              <p class="timeline-text">
+                Teaching assistant for the course "Numerical Methods for Enginners" ("Numerische Methoden für Ingenieure").
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Submitted manuscripts</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <span>2024</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                M. Schreter-Fleischhacker, P. Munch, N. Much, M. Kronbichler, W. A. Wall, C. Meier, A consistent diffuse-interface model for two-phase flow problems with rapid evaporation, 	arXiv:2401.07805, 2024. <a href="https://arxiv.org/abs/2401.07805">PDF</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                N. Much, M. Schreter-Fleischhacker, P. Munch, M. Kronbichler, W. A. Wall, C. Meier, Improved accuracy of continuum surface flux models for metal additive manufacturing melt pool simulations, 	arXiv:2401.12114, 2024. <a href="https://arxiv.org/abs/2401.12114">PDF</a>
+              </p>
+
+            </li>
+
+            <span>2023</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                M. Wichrowski, P. Munch, M. Kronbichler, G. Kanschat, Smoothers with localized residual computations for geometric multigrid methods, 2023.
+              </p>
+
+            </li>
+
+            <span>2019</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                M. Kronbichler, K. Kormann, N. Fehn, P. Munch, J. Witte, A Hermite-like basis for faster matrix-free evaluation of interior penalty discontinuous Galerkin operators, arXiv:1907.08492, 2019. <a href="https://arxiv.org/pdf/1907.08492.pdf">PDF</a>
               </p>
 
             </li>
@@ -582,49 +557,153 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Articles in peer-reviewed international journals</h3>
           </div>
 
           <ol class="timeline-list">
 
+            <span>2024</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                P. Munch, V. Ivannikov, C. Cyron, and M. Kronbichler, On the construction of an efﬁcient ﬁnite-element solver for phase-ﬁeld simulations of many-particle solid-state-sintering processes, Computational Materials Science, vol. 231, pp. 112589:1–21, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S0927025623005839">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                S.D. Proell, P. Munch, M. Kronbichler, W.A. Wall and C. Meier, A highly efficient computational framework for fast scan-resolved simulations of metal additive manufacturing processes on the scale of real parts. Additive Manufacturing, vol. 70, pp. 1039211:18, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S2214860423005341">DOI</a>
+              </p>
+            </li>
+
+            <span>2023</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                P. Munch, M. Kronbichler, Cache-optimized and low-overhead implementations of additive Schwarz methods for high-order FEM multigrid computations, The International Journal of High Performance Computing Applications, December 6, 2023. <a href="https://journals.sagepub.com/doi/abs/10.1177/10943420231217221">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                D. Arndt, W. Bangerth, M. Bergbauer, M. Feder, M. Fehling, J. Heinz, T. Heister, L. Heltai, M. Kronbichler, M. Maier, P. Munch, J.-P. Pelteret, B. Turcksin, D. Wells, S. Zampini, The deal.II library, version 9.5, Journal of Numerical Mathematics, vol. 31(3), pp. 231-246, 2023. <a href="https://www.degruyter.com/document/doi/10.1515/jnma-2023-0089/html">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                J. Heinz, P. Munch, M. Kaltenbacher, High-order non-conforming discontinuous Galerkin methods for the acoustic conservation equations, International Journal for Numerical Methods in Engineering, vol. 124(9), pp. 2034–2049, 2023.  <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.7199">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                P. Munch, I. Dravins, M. Kronbichler, M. Neytcheva, Stage-parallel fully implicit Runge-Kutta implementations with optimal multilevel preconditioners at the scaling limit, SIAM Journal on Scientiﬁc Computing (SISC), pp. S71–S96, 2023. <a href="https://epubs.siam.org/doi/10.1137/22M1503270">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                P. Munch, T. Heister, L. Prieto Saavedra, M. Kronbichler, Efficient distributed matrix-free multigrid methods on locally refined meshes for FEM computations, ACM Transactions on Parallel Computing, vol. 10(1), pp. 3:1–38, 2023. <a href="https://dl.acm.org/doi/full/10.1145/3580314">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                S. Golshan, P. Munch, R. Gassmöller, M. Kronbichler, B. Blais, Lethe-DEM: An open-source parallel discrete element solver with load balancing, Computational Particle Mechanics, vol. 10(1), pp. 77–96, 2023. <a href="https://link.springer.com/article/10.1007/s40571-022-00478-6">DOI</a>
+              </p>
+            </li>
+
+            <span>2022</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                D. Arndt, W. Bangerth, M. Feder, M. Fehling, R. Gassmöller, T. Heister, L. Heltai, M. Kronbichler, M. Maier, P. Munch, JP. Pelteret, S. Sticko, B. Turcksin, D. Wells, The deal.II library, version 9.4, Journal of Numerical Mathematics, vol. 30, no. 3, pp. 231-246, 2022. <a href="https://www.degruyter.com/document/doi/10.1515/jnma-2022-0054/html">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                M. Kronbichler, D. Sashko, P. Munch, Enhancing data locality of the conjugate gradient method for high-order matrix-free finite-element implementations, The International Journal of High Performance Computing Applications, July 7, 2022. <a href="https://journals.sagepub.com/doi/10.1177/10943420221107880">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                N. Fehn, M. Kronbichler, P. Munch, W. A. Wall, Numerical evidence of anomalous energy dissipation in incompressible Euler flows: Towards grid-converged results for the inviscid Taylor-Green problem, Journal of Fluid Mechanics, vol. 932, pp. A40:1-37, 2022. <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/numerical-evidence-of-anomalous-energy-dissipation-in-incompressible-euler-flows-towards-gridconverged-results-for-the-inviscid-taylorgreen-problem/71BED995742A2625D2EF59121A9257A1">DOI</a>
+              </p>
+            </li>
+
+            <span>2021</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                D. Arndt, W. Bangerth, B. Blais, M. Fehling, R. Gassmöller, T. Heister, L. Heltai, U. Köcher, M. Kronbichler, M. Maier, P. Munch, JP. Pelteret, S. Proell, K. Simon, B. Turcksin, D. Wells, J. Zhang, The deal.II library, version 9.3, Journal of Numerical Mathematics, vol. 29(3), pp. 171-186, 2021. <a href="https://www.degruyter.com/document/doi/10.1515/jnma-2021-0081/html">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                P. Munch, K. Kormann, M. Kronbichler, hyper.deal: An efficient, matrix-free finite-element library for high-dimensional partial differential equations, ACM Transactions on Mathematical Software, vol. 47(4), pp. 1–34, 2021. <a href="https://dl.acm.org/doi/10.1145/3469720">DOI</a>
+              </p>
+            </li>
+
+            <span>2020</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                D. Arndt, W. Bangerth, B. Blais, T. C. Clevenger, M. Fehling, A. V. Grayver, T. Heister, L. Heltai, M. Kronbichler, M. Maier, P. Munch, JP. Pelteret, R. Rastak, I. Thomas, B. Turcksin, Z. Wang, D. Wells, The deal.II library, version 9.2, Journal of Numerical Mathematics, vol. 28(3), pp. 131-146, 2020. <a href="https://www.degruyter.com/document/doi/10.1515/jnma-2020-0043/html">DOI</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                N. Fehn, P. Munch, W. A. Wall, M. Kronbichler, Hybrid multigrid methods for high-order discontinuous Galerkin discretizations, Journal of Computational Physics, vol. 415, p. 109538, 2020. <a href="https://www.sciencedirect.com/science/article/pii/S0021999120303120">DOI</a>
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="library-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Peer-reviewed proceedings and book contributions</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <span>2022</span>
+
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                P. Munch, K. Ljungkvist, M. Kronbichler, Efficient application of hanging-node constraints for matrix-free high-order FEM computations on CPU and GPU, In: Varbanescu, A. L., Bhatele, A., Luszczek, P., Marc, B. (eds.) High Performance Computing. ISC High Performance 2022. Lecture Notes in Computer Science, vol. 13289, pp. 133-152, Springer, Cham, 2022. <a href="https://doi.org/10.1007/978-3-031-07312-0_7">DOI</a>
               </p>
 
             </li>
 
+            <span>2021</span>
+
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                M. Kronbichler, N. Fehn, P. Munch, M. Bergbauer, K. R. Wichmann, C. Geitner, M. Allalen, M. Schulz, W. A. Wall, A next-generation discontinuous Galerkin fluid dynamics solver with application to high-resolution lung airflow simulations. In: SC '21: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 21:1–15, 2021. <a href="https://dl.acm.org/doi/10.1145/3458817.3476171">DOI</a>
               </p>
 
             </li>
 
+            <span>2020</span>
+
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                D. Arndt, N. Fehn, G. Kanschat, K. Kormann, M. Kronbichler, P. Munch, W. A. Wall, J. Witte, ExaDG: High-order discontinuous Galerkin for the exa-scale, In: H.-J. Bungartz, S. Reiz, B. Uekermann, P. Neumann, and W. E. Nagel (eds.), Software for Exascsale Computing - SPPEXA 2016-2019, Lecture Notes in Computational Science and Engineering, vol 136. pp. 189-224, Springer, Cham, 2020.  <a href="https://link.springer.com/chapter/10.1007/978-3-030-47956-5_8">DOI</a>
               </p>
 
             </li>
@@ -633,65 +712,374 @@
 
         </section>
 
-        <section class="skill">
+      </article>
 
-          <h3 class="h3 skills-title">My skills</h3>
 
-          <ul class="skills-list content-card">
 
-            <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="talks">
+
+        <header>
+          <h2 class="h2 article-title">Talks</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="easel-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">International conference contributions with abstract</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <span>2023</span>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <u>V. Ivannikov</u>, P. Munch, M. Kronbichler, T. Ebel, Large-scale phase-field simulations of solid state sintering of metallic powders, Euro Powder Metallurgy 2023, Lisbon, Portugal, October 1 - 4, 2023.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, M. Kronbichler, Optimizing multigrid smoothers for high-order matrix-free FEM computations, Chemnitz Finite Element Symposium 2023, Leibnitz, Austria, September 11 - 13, 2023. <a href="https://www.chemnitz-am.de/cfem2023/talks/munch_peter.pdf"> Abstract</a>
+              </p>
 
             </li>
 
-            <li class="skills-item">
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <u>S. Proell</u>, P. Munch, M. Kronbichler, W. A. Wall, C. Meier, A highly efficient computational model for fast scan-resolved simulations of metal additive manufacturing processes on the scale of real parts, Sim-AM 2023, Munich, Germany, July 26 - 18, 2023. <a href="https://sim-am2023.cimne.com/event/contribution/07b31ca5-c996-11ed-a72b-000c29ddfc0c">Abstract</a>
+              </p>
+            </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <u>M. Schreter-Fleischhacker</u>, N. Much, P. Munch, M. Kronbichler, W. A. Wall, C. Meier, Metal additive manufacturing melt pool modeling based on a novel FEM-based multi-physics model including melting and evaporation, Sim-AM 2023, Munich, Germany, July 26 - 18, 2023. <a href="https://sim-am2023.cimne.com/event/contribution/b8cc6e14-bf7c-11ed-9760-000c29ddfc0c">Abstract</a>
+              </p>
+            </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <u>N. Much</u>, M. Schreter, P. Munch, M. Kronbichler, W. A. Wall, C. Meier, Mathematically consistent representation of interface fluxes for finite-element-based melt pool modeling in metal additive manufacturing, Sim-AM 2023, Munich, Germany, July 26 - 18, 2023. <a href="https://sim-am2023.cimne.com/event/contribution/99448c64-ca45-11ed-a72b-000c29ddfc0c">Abstract</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                <u>M. Schreter-Fleischhacker</u>, N. Much, P. Munch, M. Kronbichler, W. A. Wall, C. Meier, A novel finite element formulation for thermal multi-phase flow including melting and evaporation with application to metal additive manufacturing melt pool modeling, GAMM: 93rd Annual Meeting, Dresden, Germany, May 30 - June 2, 2023. <a href="https://jahrestagung.gamm.org/wp-content/uploads/2023/05/20230517_BookofAbstracts_final_red.pdf">Abstract</a>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, V. Ivannikov, M. Kronbichler, Application and tailoring of matrix-free algorithms to many-particle solid-state-sintering phase-field implementations, SIAM Conference on Computational Science and Engineering (CSE23), Amsterdam, Netherlands, February 26 - March 3, 2023. <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=125861"> Abstract</a>
+              </p>
 
             </li>
 
-            <li class="skills-item">
+            <li class="timeline-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+              <p class="timeline-text">
+                <u>M. Fehling</u>, P. Munch, W. Bangerth, Global-coarsening multigrid for hp-adaptive finite element computations, SIAM Conference on Computational Science and Engineering (CSE23), Amsterdam, Netherlands, February 26 - March 3, 2023. <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=124484"> Abstract</a>
+              </p>
 
             </li>
 
-            <li class="skills-item">
+            <span>2022</span>
 
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
+            <li class="timeline-item">
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+              <p class="timeline-text">
+                <u>N. Fehn</u>, M. Kronbichler, P. Munch, W. A. Wall, On numerical evidence of anomalous energy dissipation, 14th European Fluid Mechanics Conference (EFMC14), Athens, Greece, September 13 - 16, 2022
+              </p>
 
             </li>
 
-          </ul>
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>M. Kronbichler</u>, P. Munch, I. Dravins, M. Neytcheva, Performance of stage-parallel implicit Runge-Kutta methods with fast multigrid methods, International Conference on Scientific Computation and Differential Equations (SciCADE) 2022, Reykjavik, Island, July 25-29, 2022
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>M. Bergbauer</u>, P. Munch, A. Massing, M. Kronbichler, W. A. Wall, Comparison of stabilization techniques for CutDG methods, 8th European Congress on Computational Methods in Applied Sciences and Engineering, Oslo, Norway, June 5-9, 2022. <a href="https://www.eccomas2022.org/admin/files/fileabstract/a1794.pdf"> Abstract</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>I. Dravins</u>, M. Neytcheva, O. Axelsson, P. Munch, M. Kronbichler, On stage-parallel preconditioning of implicit Runge-Kutta methods, Preconditioning 2022, Chemnitz, Germany, June 8-10, 2022. <a href="https://www.chemnitz-am.de/precond2022/abstracts/dravins_ivo.pdf"> Abstract</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, T. Heister, L. Prieto Saavedra and M. Kronbichler, A comparative study of global coarsening and local smoothing multigrid methods on locally refined meshes for distributed matrix-free FEM computations, 17th Copper Mountain Conference on Iterative Methods, virtual, April 4-8, 2022. <a href="https://easychair.org/smart-program/CM2022/2022-04-07.html#talk:187892"> Abstract</a>
+              </p>
+
+            </li>
+
+            <span>2021</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>M. Kronbichler</u>, P. Munch, N. Fehn, Efficient multigrid solvers for high-order discontinuous Galerkin discretizations via matrix-free operator evaluation, 6th ECCOMAS Young Investigators Conference YIC2021, Valencia, Spain, July 7-9, 2021. <a href="https://yic2021.upv.es/wp-content/uploads/2021/06/12340.pdf"> Abstract</a>
+              </p>
+
+            </li>
+
+            <span>2019</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, N. Fehn, W. A. Wall, M. Kronbichler, SIMD vectorization for high-order matrix-free finite element computations in CFD, SIAM Conference on Computational Science and Engineering (CSE19), Spokane, Washington, USA, February 25 - March 1, 2019. <a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=96523"> Abstract</a>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="easel-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Presentations and invited talks</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <span>2023</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>N. Much</u>, Matrix-free finite-element computations at extreme scale and for challenging applications, Chair of Numerical Mathematics, Helmut Schmidt University, Hamburg, Germany, November 20, 2023.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, High-dimensional finite-element computations with deal.II and hyper.deal, Chair of Optimal Control, Technical University of Munich, Munich, Germany, March 30, 2023.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, Matrix-free finite-element computations in deal.II, IGTE - Institut für Grundlagen und Theorie der Elektrotechnik, TU Graz, Graz, Austria, March 20, 2023.
+              </p>
+
+            </li>
+
+            <span>2022</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>N. Much</u>, M. Schreter, P. Munch, M Kronbichler, W. A. Wall, C Meier, A novel finite element formulation for thermal multi-phase flow including melting and evaporation: application to additive manufacturing melt pool modeling, 9th GACM Colloquium on Computational Mechanics, Essen, Germany, September 21-23, 2022.
+              </p>
+
+            </li>
+  
+            <span>2021</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>M. Kronbichler</u>, <u>P. Munch</u>, Recent advances in matrix-free, multigrid, non-matching, and simplex support in deal.II.,  9th deal.II Users and Developers Workshop, virtual one-day meeting, June 18, 2021. <a href="https://dealii.org/workshop-2021/slides-kronbichler-munch-2021.pdf">PDF</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, D. Paukner, I. Scheider, deal.II workshop, virtual three-day workshop at Helmholtz-Zentrum Hereon and Technical University of Hamburg, April 19-21, 2021, <a href="https://github.com/peterrum/dealii-hereon-workshop/blob/master/day-1.pdf">Day 1</a>, <a href="https://github.com/peterrum/dealii-hereon-workshop/blob/master/day-2.pdf">Day 2</a>, <a href="https://github.com/peterrum/dealii-hereon-workshop/blob/master/day-3.pdf">Day 3</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, Current status of simplex support in deal.II, deal.II Simplex Workshop 2021, virtual three-day workshop, January 13-15, 2021,   <a href="https://github.com/peterrum/dealii-simplex-workshop-2021/blob/master/slides.pdf">PDF</a>
+              </p>
+
+            </li>
+  
+            <span>2020</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, K. Kormann, M. Kronbichler, Solving the high-dimensional Vlasov equation with deal.II and hyper.deal, 8th deal.II Users and Developers Workshop, virtual one-day meeting, May 26, 2020.   <a href="https://dealii.org/workshop-2020/slides-munch-dealii-2020.pdf">PDF</a>,   <a href="https://youtu.be/G1uLEAm8jSc">VIDEO</a>
+              </p>
+
+            </li>
+  
+            <span>2019</span>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, M. Allalen, M. Kronbichler , P. O. Conbhuı́, P. Kanduri, deal.II on GPU, final presentation at EuroHack19, Lugano, Switzerland, September 29 - October 4, 2019.   <a href="https://github.com/vkarak/Eurohack19/wiki/presentations/deal-on-gpu.pdf">PDF</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">
+                <u>P. Munch</u>, M. Kronbichler, Efficient, large-scale simulations on complex geometries - using a hybrid multigrid solver and a fully distributed triangulation, 7th deal.II Users and Developers Workshop, Fort Collins, Colorado, USA, August 6 - 9, 2019.   <a href="https://drive.google.com/open?id=132fKx9igA78u3Tgb_Wj570El-juWpUNW">PDF</a>
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="students">
+
+        <header>
+          <h2 class="h2 article-title">Students</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Supervised PhD students</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Laura Prieto Saavedra, Polytechnique Montreal, in progress, in cooperation with Bruno Blais (main supervisor)
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-circle-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Supervised student projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Immersed boundary method for melt-front propagation for finite-element-based melt-pool modeling in metal additive manufacturing, Term Paper (TUM School of Engineering and Design, TUM), Simon Völkl, 2023, in cooperation with Magdalena Schreter
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Analysis of surface tension in two-phase flows, Master's Thesis (Department of Mathematics, TUM), Judith Pauen, 2021, in cooperation with   Magdalena Schreter and   Martin Kronbichler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Efficient shock-capturing approaches for matrix-free high-order discontinuous Galerkin methods, Master's Thesis (Department of Mechanical Engineering, TUM), David Schneider, 2020, in cooperation with   Martin Kronbichler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Massively parallel PDE solutions: coupling the sparse-grid combination technique with an efficient matrix-free finite element solver, Project (University of Stuttgart), Marius Goehring, 2021, in cooperation with   Theresa Pollinger
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                An efﬁcient hybrid multigrid solver for adaptive meshes, Master's Thesis (Computational Science and Engineering, Department of Informatics, TUM), Laura Prieto Saavedra, 2020, in cooperation with   Martin Kronbichler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Cache-efficient enumeration of degrees of freedom for high-order FEM on modern CPU hardware, IDP (Interdisciplinary Project, Department of Informatics, TUM), Alex Roschlaub, 2019, in cooperation with   Martin Kronbichler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                High-order discontinuous Galerkin simulations of Joukowsky and NACA airfoils, Bachelor's Thesis (Department of Mechanical Engineering, TUM), Elias Dejene, 2019
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Implementation and validation of a quasistatic elasticity FEM-solver, student project (Department of Mechanical Engineering, TUM), Daniel Dengler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Performance analysis of high-order finite element algorithms, IDP (Interdisciplinary Project, Department of Informatics, TUM), Karlo Kraljic, 2019, in cooperation with   Martin Kronbichler
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-text">
+                Numerical investigations on the efficiency of an in-house high-order discontinuous Galerkin flow solver compared to OpenFOAM, Master's Thesis (Department of Mechanical Engineering, TUM), Yingxian Wang, 2019, in cooperation with   Niklas Fehn
+              </p>
+            </li>
+
+          </ol>
 
         </section>
 
@@ -708,30 +1096,10 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Publications</h2>
         </header>
 
         <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
 
           <div class="filter-select-box">
 
@@ -767,172 +1135,6 @@
 
           </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
         </section>
 
       </article>
@@ -941,240 +1143,6 @@
 
 
 
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
 
     </div>
 
